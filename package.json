@@ -1,0 +1,30 @@
+{
+    "name": "sleepy",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+        "build": "rollup --config",
+        "start": "rollup --config --watch",
+        "pretty": "prettier --write .",
+        "bundle": "babel -f ./src/index.js > ./build/index.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/cli": "^7.8.4",
+        "@babel/core": "^7.9.0",
+        "@babel/plugin-proposal-class-properties": "^7.8.3",
+        "@rollup/plugin-json": "4.0.3",
+        "@rollup/plugin-node-resolve": "^7.1.3",
+        "prettier": "^2.0.5",
+        "rollup": "^2.6.1",
+        "rollup-plugin-babel": "^4.4.0",
+        "rollup-plugin-commonjs": "^10.1.0"
+    },
+    "dependencies": {
+        "geotic": "3.0.3",
+        "pixi.js": "5.0.0-rc",
+        "stats.js": "0.17.0"
+    }
+}
